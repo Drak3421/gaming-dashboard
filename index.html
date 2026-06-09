@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:220px;
+    background:#111827;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#facc15;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:12px;
+    margin-bottom:8px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#1e293b;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+.header{
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+}
+
+.card h3{
+    color:#94a3b8;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#facc15;
+}
+
+.matches{
+    margin-top:30px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    color:#facc15;
+}
+
+tr{
+    border-bottom:1px solid #334155;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>🎮 Gamer Hub</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Profile</li>
+            <li>Leaderboard</li>
+            <li>Matches</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+            <h1>Welcome Back, Player!</h1>
+            <p>Your gaming stats overview</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Matches</h3>
+                <p>245</p>
+            </div>
+
+            <div class="card">
+                <h3>Wins</h3>
+                <p>98</p>
+            </div>
+
+            <div class="card">
+                <h3>K/D Ratio</h3>
+                <p>3.4</p>
+            </div>
+
+            <div class="card">
+                <h3>Rank</h3>
+                <p>Ace</p>
+            </div>
+        </div>
+
+        <div class="matches">
+            <h2>Recent Matches</h2>
+
+            <table>
+                <tr>
+                    <th>Match</th>
+                    <th>Result</th>
+                    <th>Kills</th>
+                </tr>
+
+                <tr>
+                    <td>#245</td>
+                    <td>🏆 Win</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>#244</td>
+                    <td>🥈 Top 5</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>#243</td>
+                    <td>🏆 Win</td>
+                    <td>15</td>
+                </tr>
+
+                <tr>
+                    <td>#242</td>
+                    <td>Top 10</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
